@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Pasteleria Angela</title>
+    
+
     <!--llamo a Core Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <!-- Link al css-->
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
 </head>
-<body>
-      
+
+<body background="assets/image/fondo3.png">
+
+    
+
     <header>
         <!--imagen del logo principal o banner-->
-        <img class="logo" src="assets/image/logo.png" alt="logo">
-    </header>
+        <img class="logo" src="assets/image/logoangela.png" alt="logo"> 
 
+    </header>
+    
     <nav>
         <div id="menu">
             <ul>
@@ -29,38 +39,134 @@
 
             </ul>
         </div>
-    
+       
+
     </nav>
+    
+    <div class="container">
+  
+        <ul class="slider">
+          <li id="slide1">
+            <img src="assets/image/pastel1.jpg" alt="pastel uno">
+          </li>
+          <li id="slide2">
+            <img src="assets/image/pastel2.jpg" alt="pastel dos">
+          </li>
+          <li id="slide3">
+            <img src="assets/image/pastel3.jpg" alt="pastel tres">
+          </li>
+        </ul>
+        
+        <ul class="menu">
+          <li>
+            <a href="#slide1"></a>
+          </li>
+          <li>
+            <a href="#slide2"></a>
+          </li>
+           <li>
+            <a href="#slide3"></a>
+          </li>
+        </ul>
+        
+      </div>
 
-    <p>  <center> <h1>  ofertas </h1> </center>  </p>
+  
+  
+   
+ 
+  <div class="pilar_centro">
 
-    <div>
+    <div id="carrusel_principal">
 
-          <!--carrusel-->
-          <img class="carrusel" src="assets/image/carrusel.png" alt="ofertas">
+        <!--carrusel
+      <img class="carrusel" src="assets/image/carrusel.png" alt="ofertas">-->
+
+
+
+    <h1> Producto de la semana </h1>
+
+    <div id="carrusel_secundario">
+
+        <!--galeria de imagenes
+         <img class="galeria" src="assets/image/destacados.png" alt="Productos destacados">-->
+
+        <div class="foto_producto">
+
+            <img class="imagen_1" src="assets/image/chocolatehumedo.jpg" alt="foto1">
+
+        </div>
+
+        <div class="detalle_producto">
+            
+            <h3> <b> Pastel de chocolate Esponjoso </b> </h3> 
+
+            <p> <br>
+                Todos los amantes al chocolate están de acuerdo <br>
+                 en que es un una auténtica adicción. Si tú te <br>
+                 encuentras entre uno de los chocoadictos, esta <br>
+                 receta de pastel de chocolate esponjoso te va a <br>
+                 encantar, sobre todo cuando cortes una rebanada <br>
+                 y veas lo húmedo que es por dentro y el aroma <br>
+                 que desprende tan agradable. </p><br>
+                 <br>
+                 <br>
+                 
+                <b>Detalles </b>
+                <br>
+                - Para 10 personas (200gr aprox) <br>
+                - Ingredientes Frescos.<br>
+                - Preparación diaria.<br>
+                <br>
+                <br>
+                <b> Precios </b>
+                <br>
+                - $14.500.<br>
+                - Despacho $5.600 en todo santiago.<br>
+                 <br>
+                 <br>
+                 
+
+
+             <button> Añadir a Carro </button>   
+
+        </div>
+
+
 
     </div>
 
+    <h2> Productos relacionados </h2>
 
-    <p> <center> <h1>  Productos destacados </h1>  </center> </p>
 
-     <div>
-
-         <!--galeria de imagenes-->
-         <img class="galeria" src="assets/image/destacados.png" alt="Productos destacados">
-
+    <div id="productos1">
+       
+   
+            <a class="example-image-link" href="assets/image/frambuesaqueso.jpg" data-lightbox="Ejemplo-grupo" data-title="Pastel de frambuesa queso">  <img src="assets/image/mini/frambuesaquesmini.jpg" alt=" Frambuesa queso"> </a>
+            <a class="example-image-link" href="assets/image/veganomango.jpg" data-lightbox="Ejemplo-grupo" data-title="Pastel vegano mango">  <img src="assets/image/mini/veganomangomini.jpg" alt="Vegano mango"> </a>
+            <a class="example-image-link" href="assets/image/tortaarroz.jpg" data-lightbox="Ejemplo-grupo" data-title="Torta de arroz"> <img src="assets/image/mini/tortaarrozmini.jpg" alt="Torta arroz"> </a>
+            <a class="example-image-link" href="assets/image/hornosin.jpg" data-lightbox="Ejemplo-grupo" data-title="Horno"> <img src="assets/image/mini/hornosinmini.jpg" alt="horno"> </a>
+            <a class="example-image-link" href="assets/image/naranjasinhorno.jpg" data-lightbox="Ejemplo-grupo" data-title="Pastel de naranja"> <img src="assets/image/mini/naranjasinhornomini.jpg" title="sasdasdasdasd" alt="Torta arroz"> </a>
+            
      </div>
 
-     <p> <center> <h1>  Ubicacion y Contacto </h1>  </center> </p>
+   
+
+   <!-- <h2> Informacion de contacto y redes sociales </h2>-->
 
 
-     <div>
+    <div id="productos">
 
         <!--redes e info-->
-        <img class="info" src="assets/image/infomas.png" alt="Informacion">
+        
+
+        <img class="info" src="assets/image/footer.png" alt="ofertas">
+
 
     </div>
-    
+ 
+    <script src="assets/js/lightbox.js" ></script>
 
 </body>
+
 </html>
